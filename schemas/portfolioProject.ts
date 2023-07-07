@@ -20,10 +20,9 @@ export default defineType({
       },
     }),
     defineField({
-      name: 'author',
-      title: 'Author',
-      type: 'reference',
-      to: {type: 'author'},
+      name: 'description',
+      title: 'Description',
+      type: 'text',
     }),
     defineField({
       name: 'mainImage',
@@ -32,11 +31,6 @@ export default defineType({
       options: {
         hotspot: true,
       },
-    }),
-    defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
     }),
   ],
   preview: {
